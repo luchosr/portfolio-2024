@@ -2,13 +2,9 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <>
+    <main className="py-32 max-w-2xl mx-auto flex flex-col gap-32 px-4">
       <Header />
-      <main>
-        <h2>Hey, I'm Luciano</h2>
-        <p></p>
-      </main>
-    </>
+    </main>
   );
 }
 
