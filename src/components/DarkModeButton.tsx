@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 type DarkModeButtonProps = {
