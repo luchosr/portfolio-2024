@@ -11,7 +11,7 @@ function App() {
   };
   return (
     <main className="text-brown-900 flex h-screen flex-col items-center bg-orange-100 dark:bg-gray-800 dark:text-slate-200">
-      <nav className="flex w-3/4 flex-row justify-end border border-black pt-4 xl:w-1/2">
+      <nav className="flex w-3/4 flex-row justify-end pt-4 xl:w-1/2">
         <DarkModeButton dark={dark} darkModeHandler={darkModeHandler} />
       </nav>
       <Header />
