@@ -12,8 +12,8 @@ export default function DarkModeButton({
   return (
     <div className="bg-orange-100 dark:bg-gray-800">
       <button onClick={() => darkModeHandler()}>
-        {dark && <IoMoon className="text-2xl text-gray-700" />}
-        {!dark && <IoSunny className="text-2xl text-orange-200" />}
+        {!dark && <IoMoon className="text-2xl text-gray-700" />}
+        {dark && <IoSunny className="text-2xl text-orange-200" />}
       </button>
     </div>
   );
