@@ -2,12 +2,12 @@ import profilePic from "../images/profilePic.webp";
 
 export default function Header() {
   return (
-    <header className="mx-auto mt-24 flex max-w-2xl flex-col items-center md:flex-row">
+    <header className="mx-auto mt-12 flex max-w-2xl flex-col items-center md:flex-row">
       <div className="mt-2 flex-1 md:mt-0 md:w-2/3">
         <h1 className="text-center text-3xl no-underline md:text-left">
           Hey, I&#39;m Luciano.
         </h1>
-        <p className="mb-6 mt-3 w-11/12 text-center md:text-left">
+        <p className="mb-6 mt-3 text-center md:text-left">
           I&#39;m a <span className="font-bold">React.js | Next.js</span>{" "}
           frontend developer based in Madrid, Spain. I&#39;m passionate about
           learning new technologies as <span className="font-bold">Rust</span>,
@@ -15,7 +15,7 @@ export default function Header() {
           knowledge with others.
         </p>
       </div>
-      <div className="relative">
+      <div className="relative p-2">
         <a
           href="https://www.linkedin.com/in/luciano-ramello-b45411143/"
           target="_blank"
