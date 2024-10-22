@@ -1,27 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "./components/Header";
-import DarkModeButton from "./components/DarkModeButton";
-import { IoLogoGithub } from "react-icons/io5";
+
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [dark, setDark] = useState(true);
-
   useEffect(() => {
     document.body.classList.toggle("dark", true);
   }, []);
-  const darkModeHandler = () => {
-    setDark(!dark);
-    document.body.classList.toggle("dark");
-    console.log("dark is: ", dark);
-  };
+
   return (
     <main className="text-brown-900 flex h-screen flex-col items-center bg-orange-100 dark:bg-gray-800 dark:text-slate-200">
-      <nav className="flex w-3/4 flex-row justify-end pt-4 xl:w-1/2">
-        <DarkModeButton dark={dark} darkModeHandler={darkModeHandler} />
-      </nav>
+      <Navbar />
       <Header />
 
-      <section className="my-10 max-w-2xl flex-col px-2">
+      <section className="my-10 flex-col px-2">
         <h2 className="py-2 text-left text-2xl underline">
           Here are some of my latest projects:
         </h2>
