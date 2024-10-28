@@ -11,12 +11,12 @@ function App() {
   }, []);
 
   return (
-    <main className="text-brown-900 flex h-screen flex-col items-center bg-orange-100 dark:bg-gray-800 dark:text-slate-200">
+    <main className="text-brown-900 flex flex-col items-center bg-orange-100 dark:bg-gray-800 dark:text-slate-200">
       <Navbar />
       <Header />
       <TechStackSection techStack={techStack} />
 
-      <section className="mt-10 w-full px-6">
+      <section className="mt-10 w-full max-w-2xl px-6">
         <h2 className="text-start text-2xl underline dark:text-orange-200">
           Here are some of my latest projects:
         </h2>
