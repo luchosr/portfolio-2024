@@ -12,7 +12,7 @@ export default function TechStackSection({ techStack }: TechStackSectionProps) {
       <article className="flex flex-wrap gap-2 py-4 text-xs uppercase text-neutral-800">
         {techStack.map((tech) => (
           <div
-            className="text-brown-900 rounded-md border p-2 dark:text-slate-200"
+            className="text-brown-900 rounded-md border border-slate-950 p-2 dark:border-slate-400 dark:text-slate-200"
             key={tech}
           >
             <p>{tech}</p>
