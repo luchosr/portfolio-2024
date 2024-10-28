@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import Header from "./components/Header";
-
 import Navbar from "./components/Navbar";
+
+import { techStack } from "./data/techStack";
+import TechStackSection from "./components/TechStack";
 
 function App() {
   useEffect(() => {
@@ -12,9 +14,10 @@ function App() {
     <main className="text-brown-900 flex h-screen flex-col items-center bg-orange-100 dark:bg-gray-800 dark:text-slate-200">
       <Navbar />
       <Header />
+      <TechStackSection techStack={techStack} />
 
-      <section className="my-10 flex-col px-2">
-        <h2 className="py-2 text-left text-2xl underline">
+      <section className="mt-10 w-full px-6">
+        <h2 className="text-start text-2xl underline dark:text-orange-200">
           Here are some of my latest projects:
         </h2>
         <article className="my-4 flex w-full flex-row rounded-md border border-transparent px-2 hover:border-slate-300">
