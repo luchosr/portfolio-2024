@@ -6,7 +6,6 @@ export default function Navbar() {
   const darkModeHandler = () => {
     setDark(!dark);
     document.body.classList.toggle("dark");
-    console.log("dark is: ", dark);
   };
   return (
     <nav className="flex w-3/4 flex-row justify-end pt-4 xl:w-1/2">
