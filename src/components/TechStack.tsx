@@ -5,7 +5,7 @@ type TechStackSectionProps = {
 };
 export default function TechStackSection({ techStack }: TechStackSectionProps) {
   return (
-    <section className="mt-10 w-full px-6">
+    <section className="mt-10 w-full max-w-2xl px-6">
       <h2 className="text-start text-2xl underline dark:text-orange-200">
         This is my tech stack:
       </h2>
