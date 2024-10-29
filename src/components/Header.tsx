@@ -1,4 +1,4 @@
-import profilePic from "../images/profilePiccrop.png";
+import profilePic from "../images/profilePiccrop.webp";
 import { description } from "../data/techStack";
 export default function Header() {
   return (
