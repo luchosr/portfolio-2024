@@ -14,7 +14,7 @@ export default function ProjectCard({
   stack,
 }: ProjectCardProps) {
   return (
-    <article className="my-4 flex max-w-xl flex-row rounded-md border border-slate-800 border-transparent px-2 dark:border-slate-300">
+    <article className="my-4 flex max-w-xl flex-row rounded-md border border-slate-800 px-2 dark:border-slate-300">
       <div className="flex flex-col px-4 py-2">
         <div className="space-around flex w-2/3 flex-row py-2 md:w-2/5">
           <h3 className="text-xl font-bold">{name}</h3>

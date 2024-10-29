@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import TechStackSection from "./components/TechStack";
 
 import { techStackData } from "./data/techStack";
+import Footer from "./components/Footer";
 
 const ProjectsSection = React.lazy(
   () => import("./components/ProjectsSection"),
@@ -15,12 +16,15 @@ function App() {
   }, []);
 
   return (
-    <main className="text-brown-900 flex flex-col items-center bg-orange-100 dark:bg-gray-800 dark:text-slate-200">
+    <>
       <Navbar />
-      <Header />
-      <TechStackSection techStack={techStackData} />
-      <ProjectsSection />
-    </main>
+      <main className="text-brown-900 flex flex-col items-center dark:text-slate-200">
+        <Header />
+        <TechStackSection techStack={techStackData} />
+        <ProjectsSection />
+      </main>
+      <Footer />
+    </>
   );
 }
 
