@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ProjectsSection() {
   return (
     <section className="mt-10 w-full max-w-2xl px-6">
@@ -24,6 +22,7 @@ export default function ProjectsSection() {
             alt=""
             width={80}
             height={80}
+            loading="lazy"
           />
         </a>
       </article>

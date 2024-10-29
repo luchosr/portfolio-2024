@@ -2,19 +2,7 @@ import profilePic from "../images/profilePic.webp";
 
 export default function Header() {
   return (
-    <header className="mx-auto mt-12 flex max-w-2xl flex-col items-center md:flex-row">
-      <div className="mt-2 flex-1 px-6 md:mt-0 md:w-2/3">
-        <h1 className="text-start text-3xl no-underline dark:text-orange-200 md:text-left md:text-center">
-          Hey, I&#39;m Luciano.
-        </h1>
-        <p className="mb-6 mt-3 text-start md:text-left md:text-center">
-          I&#39;m a <span className="font-bold">React.js | Next.js</span>{" "}
-          frontend developer based in Madrid, Spain. I&#39;m passionate about
-          learning new technologies as <span className="font-bold">Rust</span>,
-          and <span className="font-bold">TypeScript</span> and sharing
-          knowledge with others.
-        </p>
-      </div>
+    <header className="mx-auto mt-12 flex max-w-2xl flex-col items-center md:flex-row md:px-6">
       <div className="relative p-2">
         <a
           href="https://www.linkedin.com/in/luciano-ramello-b45411143/"
@@ -26,8 +14,21 @@ export default function Header() {
             alt="Luciano Ramello"
             width={120}
             height={150}
+            loading="lazy"
           />
         </a>
+      </div>
+      <div className="mt-2 flex-1 px-6 md:mt-0 md:w-2/3">
+        <h1 className="text-start text-3xl no-underline dark:text-orange-200">
+          Hey, I&#39;m Luciano.
+        </h1>
+        <p className="mb-6 mt-3 text-start">
+          I&#39;m a <span className="font-bold">React.js | Next.js</span>{" "}
+          frontend developer based in Madrid, Spain. I&#39;m passionate about
+          learning new technologies as <span className="font-bold">Rust</span>,
+          and <span className="font-bold">TypeScript</span> and sharing
+          knowledge with others.
+        </p>
       </div>
     </header>
   );

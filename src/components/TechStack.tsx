@@ -5,7 +5,7 @@ export default function TechStackSection({ techStack }: TechStackSectionProps) {
   return (
     <section className="mt-10 w-full max-w-2xl px-6">
       <h2 className="text-start text-2xl underline dark:text-orange-200">
-        This is my tech stack:
+        Skills:
       </h2>
       <article className="flex flex-wrap gap-2 py-4 text-xs uppercase text-neutral-800">
         {techStack.map((tech) => (

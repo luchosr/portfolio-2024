@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import TechStackSection from "./components/TechStack";
 
 import { techStackData } from "./data/techStack";
-import TechStackSection from "./components/TechStack";
 
 const ProjectsSection = React.lazy(
   () => import("./components/ProjectsSection"),
@@ -19,10 +19,7 @@ function App() {
       <Navbar />
       <Header />
       <TechStackSection techStack={techStackData} />
-
-      <React.Suspense fallback={<>... Loading</>}>
-        <ProjectsSection />
-      </React.Suspense>
+      <ProjectsSection />
     </main>
   );
 }
