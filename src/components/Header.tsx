@@ -1,5 +1,5 @@
 import profilePic from "../images/profilePiccrop.webp";
-import { description } from "../data/techStack";
+import { description, PROFILE_TITLE } from "../data/stringConstants";
 export default function Header() {
   return (
     <header className="mx-auto mt-12 flex max-w-2xl flex-col items-center md:flex-row md:px-6">
@@ -20,7 +20,7 @@ export default function Header() {
       </div>
       <div className="mt-2 flex-1 px-6 md:mt-0 md:w-2/3">
         <h1 className="text-start text-3xl no-underline dark:text-orange-200">
-          Hey, I&#39;m Luciano.
+          {PROFILE_TITLE}
         </h1>
         <p className="mb-6 mt-3 text-start">{description}</p>
       </div>
