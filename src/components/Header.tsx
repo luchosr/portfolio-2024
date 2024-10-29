@@ -1,5 +1,5 @@
 import profilePic from "../images/profilePic.webp";
-
+import { description } from "../data/techStack";
 export default function Header() {
   return (
     <header className="mx-auto mt-12 flex max-w-2xl flex-col items-center md:flex-row md:px-6">
@@ -22,13 +22,7 @@ export default function Header() {
         <h1 className="text-start text-3xl no-underline dark:text-orange-200">
           Hey, I&#39;m Luciano.
         </h1>
-        <p className="mb-6 mt-3 text-start">
-          I&#39;m a <span className="font-bold">React.js | Next.js</span>{" "}
-          frontend developer based in Madrid, Spain. I&#39;m passionate about
-          learning new technologies as <span className="font-bold">Rust</span>,
-          and <span className="font-bold">TypeScript</span> and sharing
-          knowledge with others.
-        </p>
+        <p className="mb-6 mt-3 text-start">{description}</p>
       </div>
     </header>
   );

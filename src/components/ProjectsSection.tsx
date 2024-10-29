@@ -1,3 +1,5 @@
+import { IoBeer } from "react-icons/io5";
+
 export default function ProjectsSection() {
   return (
     <section className="mt-10 w-full max-w-2xl px-6">
@@ -16,14 +18,16 @@ export default function ProjectsSection() {
           target="_blank"
           rel=" noopener noreferrer"
           className="m-auto w-1/5 text-2xl"
+          aria-label="Drinks Cart App"
         >
-          <img
+          <IoBeer />
+          {/* <img
             src="https://raw.githubusercontent.com/luchosr/drinks-cart-app/refs/heads/main/public/drinks%20recipe%20main.png"
             alt=""
             width={80}
             height={80}
             loading="lazy"
-          />
+          /> */}
         </a>
       </article>
     </section>
