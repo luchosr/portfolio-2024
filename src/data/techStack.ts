@@ -1,4 +1,4 @@
-export const techStack = [
+export const techStackData = [
   "TypeScript",
   "React",
   "JavaScript",
