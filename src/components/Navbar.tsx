@@ -8,7 +8,7 @@ export default function Navbar() {
     document.body.classList.toggle("dark");
   };
   return (
-    <nav className="flex w-3/4 flex-row justify-end pt-4 md:w-1/3">
+    <nav className="m-auto flex w-3/4 flex-row justify-end pt-4 md:w-1/3">
       <DarkModeButton dark={dark} darkModeHandler={darkModeHandler} />
     </nav>
   );
