@@ -12,10 +12,14 @@ export default function Footer() {
         {new Date().getFullYear()} {FOOTER_RIGHTS}
       </article>
       <div className="mx-6 flex flex-row">
-        <a href={LINKEDIN_PROFILE} target="_blank">
+        <a
+          href={LINKEDIN_PROFILE}
+          aria-label="Linkedin profile"
+          target="_blank"
+        >
           <IoLogoLinkedin className="mx-2 text-xl" />
         </a>
-        <a href={GITHUB_PROFILE} target="_blank">
+        <a href={GITHUB_PROFILE} aria-label="Github profile" target="_blank">
           <IoLogoGithub className="mx-2 text-xl" />
         </a>
       </div>
