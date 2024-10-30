@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import TechStackSection from "./components/TechStack";
+import TechStackSection from "./components/TechStackSection";
 
 import { techStackData } from "./data/techStack";
 import Footer from "./components/Footer";
