@@ -15,5 +15,4 @@ export const techStackData = [
   "Jest",
   "Playwright / Cypress",
   "Git / Github",
-  "Rust",
 ];
