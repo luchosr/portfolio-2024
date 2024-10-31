@@ -7,7 +7,7 @@ export const PROJECTS_DATA = [
     name: "Drinks Cart App",
     description:
       "In this app you can put an ingredient or a name of a drink on the input and search on an API database all the drinks recipes related to it, and if you like the drink you can store it on your favorites section.",
-    link: "https://friendly-manatee-45e935.netlify.app/",
+    link: "https://endearing-donut-70acc7.netlify.app/",
     stack: ["React", "TypeScript", "Zustand", "ZOD", "TailwindCSS"],
     imgsrc: drinkCartPic,
   },
